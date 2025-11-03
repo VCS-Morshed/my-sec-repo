@@ -1,77 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first github project</title>
-    <style>
-        *{
-            background-color: rgb(33, 33, 37);
-            margin: 0;
-            padding: 0;
-        }
-        .nav-container{
-            background-color: rgb(33, 33, 37);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        h2{
-            color: rgb(193, 237, 0);
-        }
-        .middle-side{
-            display: flex;
-            justify-content: space-around;
-            border-radius: 25px;
-            border: 1px solid gray;
-            padding: 14px 20px;
-        }
-        .pages{
-            color: white;
-            text-decoration: none;
-        }
-        button{
-            display: flex;
-            cursor: progress;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(193, 237, 0);
-            width: 140px;
-            border: none;
-            padding: 8px 8px;
-            border-radius: 20px;
-        }
-        .arrow{
-            background-color: black;
-            color: white;
-            padding: 6px 4px;
-            border-radius: 15px;
-            margin-left: 10px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First GitHub Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
-    </style>
+  <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ====== BASE ====== */
+    body {
+      background-color: rgb(33, 33, 37);
+      font-family: "Syne", sans-serif;
+      color: white;
+    }
+
+    /* ====== NAVBAR ====== */
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(33, 33, 37);
+      padding: 15px 14%;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .nav-name {
+      color: rgb(193, 237, 0);
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .middle-side {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 25px;
+      padding: 24px 50px;
+      border-radius: 35px;
+      border: 1px solid rgba(128, 128, 128, 0.486);
+    }
+
+    .pages1 {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .pages1:hover {
+      color: rgb(193, 237, 0);
+    }
+
+    .left-side button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(193, 237, 0);
+      border: none;
+      border-radius: 70px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .left-side button:hover {
+      background-color: rgb(33, 33, 37);
+      border: 1px solid rgba(128, 128, 128, 0.2);
+      color: white; 
+    }
+
+    .arrow {
+      background-color: black;
+      color: white;
+      padding: 10px 10px;
+      border-radius: 25px;
+      margin-left: 10px;
+    }
+    .left-side button:hover .arrow{
+      background-color: rgb(193, 237, 0);
+      color: black; 
+    }
+
+    /* ====== HERO SECTION ====== */
+    .Hero-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px 14%;
+      gap: 40px;
+      background-color: rgb(33, 33, 37);
+      border: 1px solid tomato;
+    } 
+
+    .intro-div {
+      flex: 1;
+    }
+
+    .intro-div h1 {
+      font-family: "inter", sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    .Designation{
+      font-size: 60px;
+      color: rgb(193, 237, 0);
+      margin-bottom: 20px;
+    }
+
+    .myimg-div {
+      flex: 1;
+      height: 400px;
+      background-image: url('https://via.placeholder.com/350x400'); /* sample placeholder */
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+    }
+
+    .testimonial-div {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid rgba(128, 128, 128, 0.3);
+      border-radius: 20px;
+    }
+    .vdo-button button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(193, 237, 0);
+      border: none;
+      border-radius: 70px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .vdo-button button:hover {
+      background-color: rgb(33, 33, 37);
+      border: 1px solid rgba(128, 128, 128, 0.2);
+      color: white; 
+    }
+
+    .arrow {
+      background-color: black;
+      color: white;
+      padding: 10px 10px;
+      border-radius: 25px;
+      margin-left: 10px;
+    }
+    .vdo-button button:hover .arrow{
+      background-color: rgb(193, 237, 0);
+      color: black; 
+    }
+    .vdo-button{
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .icon-div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      border-radius: 30px;
+      background-color: rgb(193, 237, 0);
+    }
+    .icon{
+      width: 50%;
+    }
+    .icon-div:hover{
+      background-color: white;
+    }
+
+  </style>
 </head>
-<body>
 
-    <header>
-        <div class="nav-container">
-            <div class="right-side"><h2>Morshed's</h2></div>
-            <div class="middle-side">
-                <nav>
-                    <a class="pages" href="https://kits.kitmama.top/sormi/template-kit/home/">Home</a>
-                    <a class="pages" href="https://kits.kitmama.top/sormi/template-kit/home/">About</a>
-                    <a class="pages" href="https://kits.kitmama.top/sormi/template-kit/home/">Pages</a>
-                    <a class="pages" href="https://kits.kitmama.top/sormi/template-kit/home/">Services</a>
-                    <a class="pages" href="https://kits.kitmama.top/sormi/template-kit/home/">Blog</a>
-                    <a class="pages" href="https://kits.kitmama.top/sormi/template-kit/home/">Contact us</a>
-                </nav>
-            </div>
-            <div class="left-side">
-                <button>Let's talk <div class="arrow">&#8594;</div></button>
-            </div>
+<body>
+  <header class="nav-container">
+    <div class="right-side">
+      <h1 class="nav-name">Morshed's</h1>
+    </div>
+
+    <nav class="middle-side">
+      <a class="pages1" href="#">Home</a>
+      <a class="pages1" href="#">About</a>
+      <a class="pages1" href="#">Pages</a>
+      <a class="pages1" href="#">Services</a>
+      <a class="pages1" href="#">Blog</a>
+      <a class="pages1" href="#">Contact Us</a>
+    </nav>
+
+    <div class="left-side">
+      <button>Let's Talk <div class="arrow">&#8594;</div></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="Hero-container">
+      <div class="intro-div">
+        <h1>Hi, I'm Morshed</h1>
+        <p class="Designation">Web Designer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <div class="vdo-button">
+          <button>Let's Talk <div class="arrow">&#8594;</div></button>
+          <div class="icon-div"> <img src="Images/play.png" alt="player" class="icon"></div>
         </div>
-    </header>
-    <main></main>
-    <footer></footer>
+      </div>
+
+      <div class="myimg-div">
+        <img src="Images/a_man_with_his_laptop-removebg-preview.png" alt="a man">
+      </div>
+
+      <div class="testimonial-div">
+        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.”</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
