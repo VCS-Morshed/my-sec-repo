@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My First GitHub Project</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
   <style>
     /* ====== RESET ====== */
@@ -184,6 +184,78 @@
     .icon-div:hover{
       background-color: white;
     }
+    .Watch-video{
+      display: flex;
+       justify-content: center;
+       align-items: center;      
+    }
+    .watch-text{
+      font-size: 18px;
+    }
+    .review-container{
+      background-color:  rgb(40, 40, 40);
+      border-radius: 5px;
+      height: 175px;
+      width: 300px;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: 4% 6%;
+    }
+    .star-icon{
+      color: rgb(193, 237, 0);
+      font-size: 24px;
+      margin: 0;
+    }
+    .customer-number{
+      font-family: onest;
+      font-weight: 550;
+      margin: 0;
+    }
+    .customer-imgsdiv{
+      display: flex;
+    }
+    .customer-imgdiv{
+      width: 65px;
+    }
+    .customer-img{
+      width: 100%;
+      border: 3px solid white;
+      border-radius: 50%;
+    }
+    .customer-img1{
+      width: 100%;
+      border: 3px solid white;
+      border-radius: 50%;
+      margin-left: -30px;
+    }
+    .customer-img2{
+      width: 100%;
+      border: 3px solid white;
+      border-radius: 50%;
+      margin-left: -60px;
+    }
+    .customer-img3{
+      width: 100%;
+      border: 3px solid white;
+      border-radius: 50%;
+      margin-left: -90px;
+    }
+    .plus-icon{
+      font-size: 70px;
+      font-weight: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       background-color: rgba(107, 102, 102, 0.337);
+       height: 67px;
+       width: 67px;
+       border-radius: 50%;
+       position: relative;
+       top: 0px;
+       left: -155px;
+    }
 
   </style>
 </head>
@@ -214,9 +286,32 @@
         <h1>Hi, I'm Morshed</h1>
         <p class="Designation">Web Designer</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+
         <div class="vdo-button">
           <button>Let's Talk <div class="arrow">&#8594;</div></button>
           <div class="icon-div"> <img src="Images/play.png" alt="player" class="icon"></div>
+          <div class="Watch-video"><p class="watch-text">Watch Video</p></div>
+        </div>
+
+        <div class="review-container">
+
+          <div class="star">
+            <span class="star-icon">&starf;</span>
+            <span class="star-icon">&starf;</span>
+            <span class="star-icon">&starf;</span>
+            <span class="star-icon">&starf;</span>
+            <span class="star-icon">&starf;</span>
+          </div>
+          <p class="customer-number">20k Happy Customers</p>
+          <div class="customer-imgsdiv">
+            <div class="customer-imgdiv"><img src="Images/New-Project-2025-09-09T193022.198.jpg" alt="customer-img" class="customer-img"></div>
+            <div class="customer-imgdiv"><img src="Images/New-Project-2025-09-09T192538.236.jpg" alt="customer-img" class="customer-img1"></div>
+            <div class="customer-imgdiv"><img src="Images/New-Project-2025-09-09T192938.512.jpg" alt="customer-img" class="customer-img2"></div>
+            <div class="customer-imgdiv"><img src="Images/New-Project-2025-09-09T192615.062.jpg" alt="customer-img" class="customer-img3"></div>
+            <span class="plus-icon">&plus;</span>
+          </div>
+
         </div>
       </div>
 
