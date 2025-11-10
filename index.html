@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
   <style>
-    /* ====== RESET ====== */
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* ====== BASE ====== */
+    
     body {
       background-color: rgb(33, 33, 37);
       font-family: "Syne", sans-serif;
@@ -121,11 +121,12 @@
 
     .myimg-div {
       flex: 1;
-      height: 400px;
+      height: 500px;
       background-image: url('https://via.placeholder.com/350x400'); /* sample placeholder */
       background-size: cover;
       background-position: center;
       border-radius: 20px;
+      position: relative;
     }
 
     .testimonial-div {
@@ -256,6 +257,52 @@
        top: 0px;
        left: -155px;
     }
+    .secure-badge{
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5% 2%;
+      align-items: center;
+      border-radius: 25px;
+      width: 200px;
+      position: absolute;
+      top: 0;
+      right: 50px;
+    }
+    .secure-icon{
+      height: 25px;
+    }
+    .secure-text{
+      color: black;
+      font-weight: 550;
+    }
+    .higher-badge{
+      background-color: white;
+      display: flex;
+      column-gap: 15px;
+      padding: 7px 15px;
+      align-items: center;
+      border-radius: 4px;
+      width: 220px;
+      height: 60px;
+      color: black;
+      font-size: 17px;
+      font-family: poppins;
+      position: absolute;
+      bottom: 70px;
+    }
+    .whatapp-icondiv{
+      height: 50px;
+      width: 50px;
+      background-color: rgb(193, 237, 0);
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .whatapp-icon{
+      height: 30px;
+    }
 
   </style>
 </head>
@@ -316,7 +363,21 @@
       </div>
 
       <div class="myimg-div">
+
         <img src="Images/a_man_with_his_laptop-removebg-preview.png" alt="a man">
+        <div class="secure-badge">
+          <img src="Images/requirements.png" alt="secure" class="secure-icon">
+          <p class="secure-text">100% Secure Work</p>
+        </div>
+
+        <div class="higher-badge">
+
+          <div class="whatapp-icondiv"><img src="Images/whatsapp-svgrepo-com.svg" alt="whatapp-icon" class="whatapp-icon"></div>           
+           <div class="higher-texts">
+            <p class="Hire-me">Hire me</p>
+            <p class="number">019-431-77602</p>
+           </div>
+        </div>
       </div>
 
       <div class="testimonial-div">
