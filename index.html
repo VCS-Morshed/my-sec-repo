@@ -131,9 +131,9 @@
 
     .testimonial-div {
       flex: 1;
-      padding: 20px;
-      border: 1px solid rgba(128, 128, 128, 0.3);
-      border-radius: 20px;
+      display: grid;
+      grid-template-columns: 250px;
+      row-gap: 15px;
     }
     .vdo-button button {
       display: flex;
@@ -231,6 +231,11 @@
       border-radius: 50%;
       margin-left: -30px;
     }
+    .customer-imgx{
+      width: 90%;
+      border: 3px solid rgb(193, 237, 0);
+      border-radius: 50%;
+    }
     .customer-img2{
       width: 100%;
       border: 3px solid white;
@@ -302,6 +307,43 @@
     }
     .whatapp-icon{
       height: 30px;
+    }
+    .testimonialimg-div{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      border-bottom: 1px solid gray;
+      padding: 4% 2%;
+    }
+    .Abir{
+      color: white;
+      font-family: onest;
+      font-size: 18px;
+    }
+    .Ceo{
+      color: gray;
+      font-family: onest;
+      font-size: 18px;
+    }
+    .right3rd-div{
+      display: flex;
+       align-items: center;
+      column-gap: 10px;
+      border: 1px solid rgba(128, 128, 128, 0.477);
+      border-radius: 5px;
+      padding: 10%;
+      font-size: 18px;
+      font-family: onest;
+    }
+    .employee-icon{
+      height: 40px;
+      font-weight: bold;
+    }
+    .year{
+      font-size: 20px;
+    }
+    .expertise{
+      color: rgb(169, 165, 165);
     }
 
   </style>
@@ -381,7 +423,25 @@
       </div>
 
       <div class="testimonial-div">
+        <div class="testimonialimg-div">
+          <div class="customer-imgdiv"><img src="Images/New-Project-2025-09-09T192538.236.jpg" alt="customer-img" class="customer-imgx"></div>
+          <div>
+            <p class="Abir">ABIR</p>
+            <p class="Ceo">Ceo, Abir Academy</p>
+          </div>
+        </div>
+
         <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.”</p>
+
+        <div class="right3rd-div">
+          <div class="emloyee-div"> <img src="Images/global-employee.png" alt="emplyee" class="employee-icon"></div>
+
+          <div>
+            <p class="year">10+</p>
+            <p class="expertise"> Years Expertise</p>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>
