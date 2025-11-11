@@ -100,7 +100,6 @@
       padding: 100px 14%;
       gap: 40px;
       background-color: rgb(33, 33, 37);
-      border: 1px solid tomato;
     } 
 
     .intro-div {
@@ -118,6 +117,10 @@
       color: rgb(193, 237, 0);
       margin-bottom: 20px;
     }
+    .dummy{
+      font-size: 18px;
+      color: rgb(179, 174, 174);
+    }
 
     .myimg-div {
       flex: 1;
@@ -131,6 +134,8 @@
 
     .testimonial-div {
       flex: 1;
+      align-items: center;
+      justify-content: center;
       display: grid;
       grid-template-columns: 250px;
       row-gap: 15px;
@@ -327,7 +332,7 @@
     }
     .right3rd-div{
       display: flex;
-       align-items: center;
+      align-items: center;
       column-gap: 10px;
       border: 1px solid rgba(128, 128, 128, 0.477);
       border-radius: 5px;
@@ -344,6 +349,41 @@
     }
     .expertise{
       color: rgb(169, 165, 165);
+    }
+    .right4th-div{
+      border-radius: 5px;
+      padding: 10%;
+      font-size: 18px;
+      font-family: onest;
+      background-color: #28282C;
+    }
+    .requirement-icondiv{
+      display: flex;
+      align-items: center;
+      justify-content: center;      
+    }
+    .requirement-icon{
+      height: 40px;
+      margin-bottom: 12px;
+    }
+    .clients-number{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .projects-num{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .projects-txt{
+      font-size: 18px;
+      color: rgb(169, 165, 165);
+    }
+    .projects{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
   </style>
@@ -374,7 +414,7 @@
       <div class="intro-div">
         <h1>Hi, I'm Morshed</h1>
         <p class="Designation">Web Designer</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <p class="dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
 
         <div class="vdo-button">
@@ -431,18 +471,30 @@
           </div>
         </div>
 
-        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.”</p>
+        <p class="dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
 
         <div class="right3rd-div">
+          
           <div class="emloyee-div"> <img src="Images/global-employee.png" alt="emplyee" class="employee-icon"></div>
 
           <div>
             <p class="year">10+</p>
             <p class="expertise"> Years Expertise</p>
           </div>
-
         </div>
+
+        <div class="right4th-div">
+            
+        <div class="requirement-icondiv"><img src="Images/requirement.png" class="requirement-icon"></div>
+       
+        <div class="clients-number"><p class="projects-num">200+</p></div>
+        <div class="projects"><p class="projects-txt">Completed Projects</p></div>
+              
+
       </div>
+        
+      </div>
+      
     </section>
   </main>
 </body>
